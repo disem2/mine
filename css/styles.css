@@ -2,16 +2,52 @@ table {
     border: 1px solid #000000;
     border-spacing: 0;
     padding: 0 0 1px 1px;
+    -webkit-user-select: none;
+    cursor: default;
+    margin-top: 20px;
 }
 td {
     padding: 0;
+    position: relative;
+    width: 22px;
+    height: 22px;
 }
 a {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 2px 2px 0 0;
-    background: #f1f1f1;
+    background: #959DA9;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
+
+}
+a.fld {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+a.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    color: #ff0000;
+}
+a.btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #3C434E;
+}
+.mine .fld {
+    background: #ff0000;
+}
+#new {
+    margin-top: 20px;
+}
+#complexity {
+    margin-top: 20px;
 }
